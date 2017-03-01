@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KeyMedia</string>
+    <string name="pa360_details_transition">pa360_details_transition</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="Password">Password</string>
+    <string name="register">Sign UP</string>
+    <string name="Enter_valid_Username">Enter Valid Username</string>
+    <string name="Enter_valid_PHONE">Enter Valid Phone</string>
+    <string name="Enter_valid_PASS">Enter Valid Password</string>
+    <string name="Enter_Match_PASS">password not match</string>
+    <string name="Username">Username</string>
+    <string name="Clint_phone">Phone Number</string>
+    <string name="Email">Email</string>
+    <string name="NoConnection">please check your internet connection</string>
+    <string name="cant_be_empty">* you have to upload img</string>
+    <string name="add_prod_fab_transition">add_prod_fab_transition</string>
+
+
+</resources>

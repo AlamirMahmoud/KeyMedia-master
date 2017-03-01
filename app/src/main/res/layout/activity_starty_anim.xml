@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    >
+<FrameLayout
+    android:id="@+id/scaledView"
+    android:scaleX="8"
+    android:scaleY="8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/logoplay"
+    android:layout_gravity="center"
+    android:src="@drawable/logoplay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<FrameLayout
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:alpha="0"
+        android:id="@+id/logoKey"
+        android:src="@drawable/keyl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:alpha="0"
+        android:id="@+id/logoshadow"
+        android:src="@drawable/logoshadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+
+</FrameLayout>
+    <ImageView
+        android:scaleX="0.125"
+        android:scaleY="0.125"
+        android:id="@+id/inplay"
+        android:layout_gravity="center"
+        android:src="@drawable/splash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
+<ImageView
+    android:src="@drawable/key_txt"
+    android:textColor="@color/white"
+    android:alpha="0"
+    android:adjustViewBounds="true"
+    android:translationY="48dp"
+    app:layout_anchorGravity="bottom|center"
+    app:layout_anchor="@id/logoplay"
+    android:textSize="36dp"
+    android:id="@+id/logoName"
+    android:text="@string/app_name"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeActivity"
+    android:background="@drawable/imggg">
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStartWithNavigation="1dp"
+            android:elevation="3dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+            <FrameLayout
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/logomedianew"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp" />
+                    <TextView
+                        android:gravity="center|left"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorScondaryText"
+                        android:text="Key media"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <ImageButton
+                    android:layout_gravity="center|right"
+                    android:tint="@color/colorScondaryText"
+                    android:id="@+id/toolbar_menu"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_menu_white_24dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.CardView>
+    <ListView
+        android:paddingTop="24dp"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp">
+    </ListView>
+
+    <fragment
+        app:behavior_peekHeight="32dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        tools:layout="@layout/fragment_menu_sheet"
+        android:name="ameircom.keymedia.MenuSheetFragment"
+        android:id="@+id/farg_menu_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</android.support.design.widget.CoordinatorLayout>
